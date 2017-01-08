@@ -1,28 +1,20 @@
 body {
-  background-size: cover;
-  animation: bg-color-change 4s infinite;
-}
-
-@keyframes bg-color-change {
-    0% { background: cyan; }
-    33% { background: brown; }
-    66% { background: gray; }
-    100% { background: cyan;}
-}
-
-.main p {
   font-family: 'Noteworthy';
-  font-size: 84px;
-  margin-top: 25%;
   text-align: center;
 }
 
-p {
-  animation: color-change 1s infinite;
+.heading-wrapper p {
+  font-size: 40px;
+  text-shadow: 1px 1px 1px;
+  margin-bottom: 20px;
 }
 
-@keyframes color-change {
-  0% { color: red; }
-  50% { color: yellow; }
-  100% { color: red; }
+nav {
+  width: 300px;
+  margin: 0 auto;
+}
+nav a {
+  font-size: 20px;
+  padding: 10px 20px;
+  display: inline-block;
 }
