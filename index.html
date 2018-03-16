@@ -4,19 +4,33 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/theme.css">
   </head>
   <body>
-    <div class="heading-wrapper">
-      <p>saurav kothari</p>
-    </div>
-    
-    <div class="content-wrapper">
-      <nav>
-        <a href="">about</a>
-        <a href="">resume</a>
-        <a href="">contact</a>
-      </nav>
+    <div class="body-wrapper">
+      <div class="heading-wrapper">
+        <p>Saurav Kothari</p>
+      </div>
       
-      
+      <div class="content-wrapper">
+        <nav>
+          <a href="section-about" class="selected">about</a>
+          <a href="section-resume">resume</a>
+          <a href="section-contact">contact</a>
+        </nav>
+      </div>
+
+      <div class="content-wrapper">
+        <div id="section-about" class="section-content section-about">
+          Details about myself
+        </div>
+        <div id="section-resume" class="section-content section-resume hide">
+          Details about my work
+        </div>
+        <div id="section-contact" class="section-content section-contact hide">
+          Where to get in touch with me
+        </div>
+      </div>
     </div>
+
+    <script type="text/javascript" src="javascripts/script.js"></script>
   </body>
  </html>
 

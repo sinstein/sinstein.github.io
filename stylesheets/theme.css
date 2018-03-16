@@ -1,20 +1,38 @@
-body {
-  font-family: 'Noteworthy';
-  text-align: center;
-}
 
 .heading-wrapper p {
   font-size: 40px;
-  text-shadow: 1px 1px 1px;
   margin-bottom: 20px;
 }
 
+.body-wrapper {
+  font-family: 'Andale Mono';
+  text-align: center;
+}
+
+.content-wrapper {
+  padding: 20px;
+}
+
 nav {
-  width: 300px;
   margin: 0 auto;
 }
+
 nav a {
   font-size: 20px;
   padding: 10px 20px;
   display: inline-block;
+  text-decoration-line: none;
+  color: black;
+  outline: 1px solid black;
+  box-shadow: 2px 1px;
+  margin: 0 20px;
+}
+
+nav a.selected {
+  box-shadow: none;
+  background: #ddd;
+}
+
+.section-content.hide {
+  display: none;
 }
