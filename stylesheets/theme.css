@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'andale_monoregular';
+    src: url('/fonts/andalemono/andalemono-webfont.woff2') format('woff2'),
+         url('/fonts/andalemono/andalemono-webfont.woff') format('woff');
+}
 
 .heading-wrapper p {
   font-size: 40px;
@@ -5,7 +10,7 @@
 }
 
 .body-wrapper {
-  font-family: 'Andale Mono';
+  font-family: "Andale Mono", AndaleMono, 'andale_monoregular', monospace;
   text-align: center;
 }
 
