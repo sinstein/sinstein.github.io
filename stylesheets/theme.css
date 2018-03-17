@@ -16,6 +16,13 @@
 
 .content-wrapper {
   padding: 20px;
+  width: 500px;
+  margin: 0 auto;
+}
+
+a {
+  color: #009cfc;
+  /*text-decoration-line: none;*/
 }
 
 nav {
@@ -40,4 +47,14 @@ nav a.selected {
 
 .section-content.hide {
   display: none;
+}
+
+.contact-action {
+  margin-top: 10px;
+  text-align: left;
+  padding-left: 50px;
+}
+
+.contact-action i {
+  width: 20px;
 }

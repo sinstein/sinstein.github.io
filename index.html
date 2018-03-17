@@ -2,6 +2,7 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="stylesheets/theme.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
   </head>
   <body>
     <div class="body-wrapper">
@@ -11,21 +12,38 @@
       
       <div class="content-wrapper">
         <nav>
-          <a href="section-about" class="selected">about</a>
-          <a href="section-resume">resume</a>
-          <a href="section-contact">contact</a>
+          <a href="section-about" class="nav-action">about</a>
+          <a href="section-resume" class="nav-action">resume</a>
+          <a href="section-contact" class="selected nav-action">contact</a>
         </nav>
       </div>
 
       <div class="content-wrapper">
-        <div id="section-about" class="section-content section-about">
+        <div id="section-about" class="section-content section-about hide">
           Details about myself
         </div>
         <div id="section-resume" class="section-content section-resume hide">
           Details about my work
         </div>
-        <div id="section-contact" class="section-content section-contact hide">
-          Where to get in touch with me
+        <div id="section-contact" class="section-content section-contact">
+          <div class="contact-email contact-action">
+            <i class="fas fa-inbox"></i>
+            <a href="mailto:sauravkothari2@gmail.com" target="_blank">sauravkothari2@gmail.com</a>
+          </div>
+          <div class="contact-twitter contact-action">
+            <i class="fab fa-twitter-square"></i>
+            <a href="https://www.twitter.com/SauravKothari" target="_blank">@SauravKothari</a>
+          </div>
+          <div class="contact-github contact-action">
+            <i class="fab fa-github-square"></i>
+            <a href="https://www.github.com/sinstein" target="_blank">sinstein</a>
+          </div>
+          <div class="contact-linkedin contact-action">
+            <i class="fab fa-linkedin"></i>
+            <a href="https://linkedin.com/in/sinstein/" target="_blank">sinstein</a>
+          </div>
+          <div>
+          </div>
         </div>
       </div>
     </div>

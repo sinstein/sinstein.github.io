@@ -1,4 +1,4 @@
-var links = document.getElementsByTagName("a");
+var links = document.getElementsByClassName("nav-action");
 var sections = document.getElementsByClassName("section-content");
 
 for(var i = 0; i < links.length; i++) {
