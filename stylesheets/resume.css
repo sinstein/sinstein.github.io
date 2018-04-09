@@ -1,0 +1,14 @@
+table {
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 20px;
+	table-layout: fixed;
+}
+
+td {
+	padding: 10px;
+}
+
+li {
+	text-align: left;
+}
