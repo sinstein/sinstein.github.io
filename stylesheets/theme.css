@@ -45,6 +45,11 @@ nav a.selected {
   background: #ddd;
 }
 
+.nav-action-link {
+  outline: none;
+  box-shadow: 2px -1px;
+}
+
 .section-content.hide {
   display: none;
 }
@@ -57,4 +62,55 @@ nav a.selected {
 
 .contact-action i {
   width: 20px;
+}
+
+.hide {
+  display: none;
+}
+
+
+
+
+
+
+
+
+.timeline-wrapper {
+  position: relative;
+  padding: 50px 0;
+}
+
+.timeline-line {
+  width: 100%;
+  height: 2px;
+  background: black;
+}
+
+.timeline-point {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: white;
+  border-radius: 4px;
+  border: 1px solid black;
+  top: 48px;
+}
+
+.timeline-point:hover {
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  top: 46px;
+}
+
+.visibile-text {
+  width: 100px;
+  height: 50px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  position: absolute;
+  top: -10px;
+  box-sizing: border-box;
+  padding: 14px;
+
 }

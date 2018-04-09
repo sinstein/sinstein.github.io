@@ -7,7 +7,7 @@ table {
 	margin-bottom: 10px;
 }
 
-td {
+td, th {
 	padding: 10px;
 }
 
@@ -16,6 +16,20 @@ li {
 }
 
 table, th, td {
-    border: 1px solid black;
+    border: 1px solid #ddd;
     border-collapse: collapse;
+}
+
+table {
+	border-top: none;
+	border-left: none;
+}
+
+.experience-table th {
+	border: none;
+	text-align: left;
+}
+
+.extra-table {
+	margin-top: 40px;
 }
