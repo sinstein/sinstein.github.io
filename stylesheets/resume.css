@@ -1,8 +1,10 @@
 table {
 	width: 100%;
+	max-width: 1000px;
 	margin: 0 auto;
 	padding-bottom: 20px;
 	table-layout: fixed;
+	margin-bottom: 10px;
 }
 
 td {
@@ -11,4 +13,9 @@ td {
 
 li {
 	text-align: left;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
 }
