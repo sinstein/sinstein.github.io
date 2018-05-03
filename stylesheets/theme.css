@@ -16,9 +16,19 @@
 
 .content-wrapper {
   padding: 20px;
+  width: 800px;
+  margin: 0 auto;
+}
+
+.section-content {
   width: 500px;
   margin: 0 auto;
 }
+
+.section-about {
+  width: 800px;
+}
+
 
 a {
   color: #009cfc;
