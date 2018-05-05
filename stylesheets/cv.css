@@ -1,0 +1,52 @@
+table {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding-bottom: 20px;
+	table-layout: fixed;
+	margin-bottom: 10px;
+	font-family: 'Calibri';
+	text-align: center;
+}
+
+td, th {
+	padding: 10px;
+}
+
+ul {
+	padding-left: 20px;
+	list-style: disc;
+	padding-bottom: 10px;
+}
+
+li {
+	text-align: left;
+	padding: 5px 0;
+}
+
+li:first-child {
+	padding-top: 10px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+}
+
+table {
+	border-top: none;
+	border-left: none;
+}
+
+.experience-table th {
+	text-align: left;
+	font-weight: normal;
+}
+
+.extra-table {
+	margin-top: 40px;
+}
+
+.pagebreak {
+	page-break-before: always;
+}
