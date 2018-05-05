@@ -54,3 +54,9 @@ table {
 .pagebreak {
 	page-break-before: always;
 }
+
+.download-section {
+	text-align: center;
+	margin-bottom: 10px;
+	font-size: 10px;
+}
