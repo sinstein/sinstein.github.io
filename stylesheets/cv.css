@@ -47,6 +47,10 @@ table {
 	font-weight: normal;
 }
 
+th strong {
+	color: #00436B;
+}
+
 .extra-table {
 	margin-top: 40px;
 }
