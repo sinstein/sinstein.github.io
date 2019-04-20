@@ -64,3 +64,11 @@ th strong {
 	margin-bottom: 10px;
 	font-size: 10px;
 }
+
+@media print
+{    
+    .no-print, .no-print *
+    {
+        display: none !important;
+    }
+}
