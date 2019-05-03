@@ -65,6 +65,24 @@ th strong {
 	font-size: 10px;
 }
 
+span.secondary {
+	color: #999;
+}
+
+span.secondary-note {
+	font-size: 10px;
+}
+
+.secondary-cell {
+	border: none;
+	padding: 0;
+	float: left;
+}
+
+#table-technicals {
+	border-bottom: none;
+}
+
 @media print
 {    
     .no-print, .no-print *
