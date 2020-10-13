@@ -25,14 +25,77 @@
           <th colspan="3">Saurav Kothari</th>
         </tr>
         <tr>
-          <td><a href="mailto:contact@sinstein.xyz" target="_blank">contact@sinstein.xyz</a></td>
+          <td><a href="mailto:kothari@hey.com" target="_blank">kothari@hey.com</a></td>
           <td><a href="/" target="_blank">sinstein</a></td>
           <td><a href="tel:+919534082107">+91 95340 82107</a></td>
         </tr>
       </table>
       <table class="experience-table">
         <tr>
-          <th><strong>honestbee</strong><br>Software Engineer 2, July 2018 - Present</th>
+          <th><strong>Udaan</strong><br>Product Engineer, May 2019 - Aug 2020</th>
+          <th>Bengaluru</th>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div class="experience-summary">
+              <p>As a Product Engineer, my responsibilities involved taking ownership of the business goals of the problem area, to
+                build a roadmap for exectution and execution.
+              </p>
+              <p>I owned First Party Procurement as a problem area. The core issue we were trying to solve was that of reconciliation.
+                We were purchasing and selling a lot of inventory but all of the accounting was done outside the system.
+                The larger goal was to systemize the procurement process so that every step could be documented, instrumented ands
+                improved with insights. This would also help identify leaks and gaps in the financial process and prevent any potential
+                for abuse.
+              </p>
+              <p>The architecture would include a Product Master, a Vendor Master, the layer to raise Purchase Orders for products to Vendors, the layer to match the goods received
+                at the Warehouse against open POs and subsequently trigger the relevant financial workflow.
+                I started a sole engineer on the problem which later expanded to 12 engineers working on various facets of the problem.
+              </p>
+              <p>
+                <h4 class="text-left">Technical Overview</h5>
+                <p>The project was written using Kotlin and Dropwizard. The frontend was built on ReactJS. 
+                  All communication across services was done via RESTful Clients. We were hosted on Azure and leveraged a lot of azure 
+                  products (AzureSQL, Cosmos DB, Cloud Storage)
+                </p>
+              </p>
+            </div>
+            <ol>
+              <li>Product Master</li>
+              <ul>
+                <li>Designed and developed a product master to maintain a central list of unique products that can be purchased or sold</li>
+                <li>Each Product would corresspond to a unique physical SKU and would account for various packaging units</li>
+              </ul>
+              <li>Vendor Master</li>
+              <ul>
+                <li>Vendor Master to store vendor information and map to relevant locations</li>
+                <li>Map purchase orders to vendor + location and only allow inwards of matching goods</li>
+                <li>Allow financial documents (po, credit notes) to be generated and sent directly to vendors via email</li>
+              </ul>
+              <li>Purchase Order & Matching</li>
+              <ul>
+                <li>PO System to allow creation of POs for Product + Vendor + Location</li>
+                <li>Multiple levels of approval before PO can be sent to Vendor</li>
+                <li>Match received goods to open POs and keep track of deviations</li>
+                <li>Allow real time action on deviations - allow excess or reject and return</li>
+              </ul>
+              <li>Financial Reconciliation</li>
+              <ul>
+                <li>Tap into finance workflows to allow for accurate vendor payments</li>
+                <li>Track and record deviations in vendor ledgers</li>
+              </ul>
+            </ol>
+            <div class="experience-summary">
+              <p>
+                Every step had monitoring and alerting with provision for escalation on the basis of age.
+              </p>
+            </div>
+          </td>
+        </tr>
+      </table>
+
+      <table class="experience-table">
+        <tr>
+          <th><strong>honestbee</strong><br>Software Engineer 2, July 2018 - May 2019</th>
           <th>Bengaluru</th>
         </tr>
         <tr>
@@ -47,6 +110,8 @@
           </td>
         </tr>
       </table>
+
+      <div class="pagebreak"></div>
       <table class="experience-table">
         <tr>
           <th><strong>BrowserStack Inc.</strong><br>Software Developer, May 2015 - July 2018</th>
@@ -87,7 +152,6 @@
         </tr>
       </table>
 
-      <div class="pagebreak"></div>
       <table class="experience-table">
           <tr>
             <th><strong>Amazon India Pvt. Ltd.</strong><br>Software Developer Intern, Summer 2014</th>
@@ -126,7 +190,7 @@
             Languages
           </td>
           <td>
-            Ruby, Javascript, <span class="secondary">Go*</span>
+            Ruby, Javascript, Kotlin, <span class="secondary">Go*</span>
           </td>
         </tr>
 
@@ -135,7 +199,7 @@
             Frameworks
           </td>
           <td>
-            Ruby on Rails
+            Ruby on Rails, Dropwizard, ReactJS
           </td>
         </tr>
 
@@ -144,7 +208,7 @@
             Databases
           </td>
           <td>
-            Redis, MySQL, BigQuery
+            Redis, MySQL, CosmosDb, BigQuery
           </td>
         </tr>
         <tr>

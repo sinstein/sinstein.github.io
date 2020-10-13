@@ -23,6 +23,18 @@ ul {
 	padding-bottom: 10px;
 }
 
+.text-left {
+	text-align: left;
+}
+
+.experience-summary {
+	padding: 0 20px;
+}
+
+ul.work-wrapper {
+	padding-left: 40px;
+}
+
 li {
 	text-align: left;
 	padding: 5px 0;
@@ -49,6 +61,10 @@ table {
 
 th strong {
 	color: #00436B;
+}
+
+.experience-table p {
+	text-align: left;
 }
 
 .extra-table {
