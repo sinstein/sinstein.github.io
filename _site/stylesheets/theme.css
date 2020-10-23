@@ -10,6 +10,7 @@
 .body-wrapper {
   font-family: 'Calibri', 'Open Sans', sans-serif;
   text-align: center;
+  min-width: 300px;
 }
 
 .content-wrapper {
@@ -128,4 +129,26 @@ nav a.selected {
   box-sizing: border-box;
   padding: 14px;
 
+}
+
+@media screen and (max-width: 960px) {
+  .content-wrapper, .section-content, .section-about {
+    width: auto;
+  }
+
+  .section-about {
+    text-align: initial;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  nav a {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .nav-action-link {
+    outline: 1px solid black;
+    box-shadow: 2px 1px;
+  }
 }

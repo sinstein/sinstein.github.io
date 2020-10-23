@@ -23,6 +23,22 @@ ul {
 	padding-bottom: 10px;
 }
 
+.text-left {
+	text-align: left;
+}
+
+.experience-summary {
+	padding: 0 20px;
+}
+
+.experience-keywords td {
+	padding: 5px 10px;
+}
+
+ul.work-wrapper {
+	padding-left: 40px;
+}
+
 li {
 	text-align: left;
 	padding: 5px 0;
@@ -47,12 +63,20 @@ table {
 	font-weight: normal;
 }
 
+.experience-table ul li {
+	padding: 5px;
+}
+
 th strong {
 	color: #00436B;
 }
 
-.extra-table {
-	margin-top: 40px;
+.experience-table p {
+	text-align: left;
+}
+
+.summary-table {
+	margin-bottom: 20px;
 }
 
 .pagebreak {
@@ -63,6 +87,24 @@ th strong {
 	text-align: center;
 	margin-bottom: 10px;
 	font-size: 10px;
+}
+
+span.secondary {
+	color: #999;
+}
+
+span.secondary-note {
+	font-size: 10px;
+}
+
+.secondary-cell {
+	border: none;
+	padding: 0;
+	float: left;
+}
+
+#table-technicals {
+	border-bottom: none;
 }
 
 @media print

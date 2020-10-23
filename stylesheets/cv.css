@@ -31,6 +31,10 @@ ul {
 	padding: 0 20px;
 }
 
+.experience-keywords td {
+	padding: 5px 10px;
+}
+
 ul.work-wrapper {
 	padding-left: 40px;
 }
@@ -59,6 +63,10 @@ table {
 	font-weight: normal;
 }
 
+.experience-table ul li {
+	padding: 5px;
+}
+
 th strong {
 	color: #00436B;
 }
@@ -67,8 +75,8 @@ th strong {
 	text-align: left;
 }
 
-.extra-table {
-	margin-top: 40px;
+.summary-table {
+	margin-bottom: 20px;
 }
 
 .pagebreak {

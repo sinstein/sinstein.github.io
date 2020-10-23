@@ -30,73 +30,137 @@
           <td><a href="tel:+919534082107">+91 95340 82107</a></td>
         </tr>
       </table>
-      <table class="experience-table">
-        <tr>
-          <th><strong>Udaan</strong><br>Product Engineer, May 2019 - Aug 2020</th>
-          <th>Bengaluru</th>
+
+      <table class="summary-table" id="table-technicals">
+        <tr class="text-left">
+          <td colspan="5">
+            <p>
+              Hi, I am Saurav Kothari, a full stack engineer with 5 years of experience working with some of the fastest growing startups.
+              I consider myself to be an engineer first, developer second; 
+              i.e, my goal is to solve problems and technology is one of the tools I utilize to solve them.
+            </p>
+            <p>
+              Over the past years I have had the opportunity to work across a wide range of business domains from SaaS to e-commerce.
+              I have worked across the stack over components that have been internal facing as well as user facing and I believe I can emphatize with
+              the end consumer of my product. My experience as a Product Engineer has expanded my horizon to understand business goals and how to and how to 
+              tie them to tech goals to create a win-win scenario for everyone involved.
+            </p>
+            <p>
+              I have been fortunate to have worked with various languages and frameworks and feel comfortable learning new ones 
+              as needed and switching between them on the go.
+            </p>
+          </td>
         </tr>
         <tr>
           <td colspan="2">
-            <div class="experience-summary">
-              <p>As a Product Engineer, my responsibilities involved taking ownership of the business goals of the problem area, to
-                build a roadmap for exectution and execution.
-              </p>
-              <p>I owned First Party Procurement as a problem area. The core issue we were trying to solve was that of reconciliation.
-                We were purchasing and selling a lot of inventory but all of the accounting was done outside the system.
-                The larger goal was to systemize the procurement process so that every step could be documented, instrumented ands
-                improved with insights. This would also help identify leaks and gaps in the financial process and prevent any potential
-                for abuse.
-              </p>
-              <p>The architecture would include a Product Master, a Vendor Master, the layer to raise Purchase Orders for products to Vendors, the layer to match the goods received
-                at the Warehouse against open POs and subsequently trigger the relevant financial workflow.
-                I started a sole engineer on the problem which later expanded to 12 engineers working on various facets of the problem.
-              </p>
-              <p>
-                <h4 class="text-left">Technical Overview</h5>
-                <p>The project was written using Kotlin and Dropwizard. The frontend was built on ReactJS. 
-                  All communication across services was done via RESTful Clients. We were hosted on Azure and leveraged a lot of azure 
-                  products (AzureSQL, Cosmos DB, Cloud Storage)
-                </p>
-              </p>
-            </div>
-            <ol>
-              <li>Product Master</li>
-              <ul>
-                <li>Designed and developed a product master to maintain a central list of unique products that can be purchased or sold</li>
-                <li>Each Product would corresspond to a unique physical SKU and would account for various packaging units</li>
-              </ul>
-              <li>Vendor Master</li>
-              <ul>
-                <li>Vendor Master to store vendor information and map to relevant locations</li>
-                <li>Map purchase orders to vendor + location and only allow inwards of matching goods</li>
-                <li>Allow financial documents (po, credit notes) to be generated and sent directly to vendors via email</li>
-              </ul>
-              <li>Purchase Order & Matching</li>
-              <ul>
-                <li>PO System to allow creation of POs for Product + Vendor + Location</li>
-                <li>Multiple levels of approval before PO can be sent to Vendor</li>
-                <li>Match received goods to open POs and keep track of deviations</li>
-                <li>Allow real time action on deviations - allow excess or reject and return</li>
-              </ul>
-              <li>Financial Reconciliation</li>
-              <ul>
-                <li>Tap into finance workflows to allow for accurate vendor payments</li>
-                <li>Track and record deviations in vendor ledgers</li>
-              </ul>
-            </ol>
-            <div class="experience-summary">
-              <p>
-                Every step had monitoring and alerting with provision for escalation on the basis of age.
-              </p>
-            </div>
+            Languages
+          </td>
+          <td colspan="3">
+            Ruby, Javascript, TypeScript, Kotlin, <span class="secondary">Go*</span>
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            Frameworks
+          </td>
+          <td colspan="3">
+            Ruby on Rails, Dropwizard, ReactJS
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">B.Tech in Computer Science and Engineering</td>
+          <td>IIT (ISM) Dhanbad</td>
+          <td>2015</td>
+          <td>7.5</td>
+        </tr>
+        <tr>
+          <td class="secondary-cell">
+              <span class="secondary secondary-note">* elementary proficiency</span>
           </td>
         </tr>
       </table>
 
       <table class="experience-table">
         <tr>
+          <th><strong>Udaan</strong><br>Product Engineer, May 2019 - Aug 2020</th>
+          <th>Bengaluru</th>
+        </tr>
+        <tr class="experience-keywords text-left">
+          <td colspan="2">
+            <strong>Domain:</strong> Logistics, Supply Chain, Warehousing, Accounts Payable, Financial Reconciliation
+          </td>
+        </tr>
+        <tr class="experience-keywords text-left">
+          <td colspan="2">
+            <strong>Technology:</strong> Kotlin, TypeScript, Dropwizard, ReactJS, Kubernetes, Azure SQL, Cosmos Db
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <div class="experience-summary">
+              <p>
+                As a Product Engineer, my responsibilities involved taking ownership of the business goals of the problem area, to
+                build a roadmap for execution and achieving business goals via tech and non-tech solutions.
+              </p>
+            </div>
+            <ol>
+              <li>First Party Procurement</li>
+                <p>
+                  We were building a product that would systemize the procurement process of goods at Udaan.
+                  We were purchasing and selling a lot of inventory but all of the accounting was done outside the system.
+                  The goal was to build first class workflows around purchases, inwarding and reconciliaton. 
+                  This would help identify leaks and gaps in the financial process and prevent any potential
+                  for abuse.
+                </p>
+                <p>
+                  The architecture would include a product master, location master, vendor master, the layer to raise purchase orders
+                  for products to vendors, the layer to match the goods received at the Warehouse against open POs 
+                  and subsequently trigger the relevant financial workflow(s).
+                </p>
+              <ul>
+                <li>Designed and developed a <strong>location master</strong> to maintain list of warehouses</li>
+                <li>Each location was mapped to kind of goods being bought/sold at location</li>
+                <li>Each location had an approval matrix that would allow for actions to be performed by specific individuals on the basis of access</li>
+                <li>Designed and developed a <strong>product master</strong> to maintain a central list of unique products that can be purchased or sold</li>
+                <li>Each product was a combination of identifying attributes of a product taking into account various packaging units</li>
+                <li>Desiged and developed <strong>vendor master</strong> to store vendor information</li>
+                <li>Each vendor was mapped to specific warehouses for which orders could be raised and delivered</li>
+                <li>Each incoming shipment was matched to a vendor on the basis of tax information from the invoice</li>
+                <li>Allow financial documents (po, credit notes) to be generated and sent directly to vendors via email</li>
+                <li>Designed and developed a <strong>modular listing layer</strong> that can create sellable listings from product master</li>
+                <li>The listing layer considered Udaan to be a marketplace and can be extended to allow for listing on any other platform</li>
+                <li>All non identifying attributes of a listing (offers, price etc) could be managed independently</li>
+                <li>Designed and developed a <strong>purchase order layer</strong> to allow for orders to vendors for warehouses</li>
+                <li>Map purchase orders to vendor + location and only allow inwards of matching goods</li>
+                <li>Every inward is checked against open POs for the vendor and only allowed if there is matching line item</li>
+                <li>All deviations from the PO are recorded, staged in warehouse and require additional approval to be inwarded</li>
+                <li>Allow real time action on deviations - allow excess or reject and return</li>
+                <li>Every inward cycle to trigger the relevant <strong>financial workflows</strong> including vendor payments, adjustment notes, return notes etc</li>
+                <li>Vendor invoices are digitized manually after each inward to capture correct purchase price</li>
+                <li>Price changes for sales take into account the purchase price of goods and prevent accidental absurd price changes</li>
+              </ul>
+            </ol>
+          </td>
+        </tr>
+      </table>
+
+      <div class="pagebreak"></div>
+
+      <table class="experience-table">
+        <tr>
           <th><strong>honestbee</strong><br>Software Engineer 2, July 2018 - May 2019</th>
           <th>Bengaluru</th>
+        </tr>
+        <tr class="experience-keywords text-left">
+          <td colspan="2">
+            <strong>Domain:</strong> Logistics, Gig Economy
+          </td>
+        </tr>
+        <tr class="experience-keywords text-left">
+          <td colspan="2">
+            <strong>Technology:</strong> Ruby, Go, Rails, Kubernetes, Postgres, Redis
+          </td>
         </tr>
         <tr>
           <td colspan="2">
@@ -111,11 +175,20 @@
         </tr>
       </table>
 
-      <div class="pagebreak"></div>
       <table class="experience-table">
         <tr>
           <th><strong>BrowserStack Inc.</strong><br>Software Developer, May 2015 - July 2018</th>
           <th>Mumbai</th>
+        </tr>
+        <tr class="experience-keywords text-left">
+          <td colspan="2">
+            <strong>Domain:</strong> B2B SaaS, Automation
+          </td>
+        </tr>
+        <tr class="experience-keywords text-left">
+          <td colspan="2">
+            <strong>Technology:</strong> Ruby, NodeJS, Rails, MySQL, Redis
+          </td>
         </tr>
         <tr>
           <td colspan="2">
@@ -168,55 +241,6 @@
             </td>
           </tr>
         </table>
-
-      <table class="extra-table">
-        <tr>
-          <th colspan="2">Qualifications</th>
-        </tr>
-        <tr>
-          <td colspan="2">B.Tech in Computer Science and Engineering</td>
-          <td>IIT (ISM) Dhanbad</td>
-          <td>2015</td>
-          <td>7.5</td>
-        </tr>
-      </table>
-
-      <table class="extra-table" id="table-technicals">
-        <tr>
-          <th>Technicals</th>
-        </tr>
-        <tr>
-          <td>
-            Languages
-          </td>
-          <td>
-            Ruby, Javascript, Kotlin, <span class="secondary">Go*</span>
-          </td>
-        </tr>
-
-        <tr>
-          <td>
-            Frameworks
-          </td>
-          <td>
-            Ruby on Rails, Dropwizard, ReactJS
-          </td>
-        </tr>
-
-        <tr>
-          <td>
-            Databases
-          </td>
-          <td>
-            Redis, MySQL, CosmosDb, BigQuery
-          </td>
-        </tr>
-        <tr>
-          <td class="secondary-cell">
-              <span class="secondary secondary-note">* elementary proficiency</span>
-          </td>
-        </tr>
-      </table>
     </div>
     <div class="download-section no-print">
       <a href="/public/CV_Saurav_Kothari.pdf" target="_blank">Download PDF version</a>
