@@ -81,6 +81,35 @@
         </tr>
       </table>
 
+
+      <table class="experience-table">
+        <tr>
+          <th><strong>AirAsia</strong><br>Tech Lead (Full Stack), Dec 2020 - Present</th>
+          <th>Bengaluru</th>
+        </tr>
+        <tr class="experience-keywords text-left">
+          <td colspan="2">
+            <strong>Domain:</strong> Experimentation
+          </td>
+        </tr>
+        <tr class="experience-keywords text-left">
+          <td colspan="2">
+            <strong>Technology:</strong> Go, Kubernetes, Google Cloud, TypeScript, ReactJS
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <ol>
+              <li>Experimentation</li>
+              <ul>
+                  <li>Designed and developed multi variate experiment support in the in-house experimentation product.</li>
+                  <li>Designed and developed a unified session solution to track user journey for accurate analysis of experiment effect on user behaviour.</li>
+              </ul>
+            </ol>
+          </td>
+        </tr>
+      </table>
+
       <table class="experience-table">
         <tr>
           <th><strong>Udaan</strong><br>Product Engineer, May 2019 - Aug 2020</th>
@@ -118,27 +147,19 @@
                   for products to vendors, the layer to match the goods received at the Warehouse against open POs 
                   and subsequently trigger the relevant financial workflow(s).
                 </p>
+                <p>
+                  This was a massive overhaul of processes around warehousing, ordering, pricing and accounting.
+                  Key stakeholders across each domain were consulted and agreement was reached to roll out pan-india in phases over 6 months.
+                  The first warehouse was launched and the process stabilised in 1 month, 7 more were launched over the course of 2 months.
+                  Pricing and Ordering workflows were rolled out 100% across two categories with the rest to be ramped up in quick succession.
+                </p>
               <ul>
-                <li>Designed and developed a <strong>location master</strong> to maintain list of warehouses</li>
-                <li>Each location was mapped to kind of goods being bought/sold at location</li>
-                <li>Each location had an approval matrix that would allow for actions to be performed by specific individuals on the basis of access</li>
-                <li>Designed and developed a <strong>product master</strong> to maintain a central list of unique products that can be purchased or sold</li>
-                <li>Each product was a combination of identifying attributes of a product taking into account various packaging units</li>
-                <li>Designed and developed <strong>vendor master</strong> to store vendor information</li>
-                <li>Each vendor was mapped to specific warehouses for which orders could be raised and delivered</li>
-                <li>Each incoming shipment was matched to a vendor on the basis of tax information from the invoice</li>
+                <li>Each location was mapped to kind of goods being bought/sold at location and had an approval matrix that would allow actions to be monitored and approved/rejected centrally</li>
                 <li>Allow financial documents (po, credit notes) to be generated and sent directly to vendors via email</li>
-                <li>Designed and developed a <strong>modular listing layer</strong> that can create sellable listings from product master</li>
-                <li>The listing layer considered Udaan to be a marketplace and can be extended to allow for listing on any other platform</li>
-                <li>All non identifying attributes of a listing (offers, price etc) could be managed independently</li>
-                <li>Designed and developed a <strong>purchase order layer</strong> to allow for orders to vendors for warehouses</li>
                 <li>Map purchase orders to vendor + location and only allow inwards of matching goods</li>
                 <li>Every inward is checked against open POs for the vendor and only allowed if there is matching line item</li>
                 <li>All deviations from the PO are recorded, staged in warehouse and require additional approval to be inwarded</li>
-                <li>Allow real time action on deviations - allow excess or reject and return</li>
                 <li>Every inward cycle to trigger the relevant <strong>financial workflows</strong> including vendor payments, adjustment notes, return notes etc</li>
-                <li>Vendor invoices are digitized manually after each inward to capture correct purchase price</li>
-                <li>Price changes for sales take into account the purchase price of goods and prevent accidental absurd price changes</li>
               </ul>
             </ol>
           </td>
