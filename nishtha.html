@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="stylesheets/cv.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <title>CV | Nishtha Gupta</title>
+    <meta charset="utf-8" name="description" content="The CV of Nishtha Gupta">
+  </head>
+  <body>
+    <div class="body-wrapper">
+      <table class="intro-table">
+        <tr>
+          <th colspan="2">Nishtha Gupta</th>
+        </tr>
+        <tr>
+          <td><a href="mailto:nishthagupta25@gmail.com" target="_blank">nishthagupta25@gmail.com</a></td>
+          <!-- <td><a href="/" target="_blank">sinstein</a></td> -->
+          <td><a href="tel:+917549002353">+91 7549002353</a></td>
+        </tr>
+      </table>
+
+      <table class="summary-table" id="table-technicals">
+        <tr class="text-left">
+          <td colspan="5">
+              <p>
+                  Hi, I am Nishtha Gupta, a full stack engineer with 6 years of experience in Java, JavaScript and related frameworks of EmberJs, ReactJs, Spring(Core and MVC) and Hibernate,
+                  along with MySQL and PostgreSQL. Currently working as Computer Scientist at Adobe, Bangalore
+              </p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            Languages
+          </td>
+          <td colspan="3">
+            Java, Javascript, TypeScript
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            Frameworks
+          </td>
+          <td colspan="3">
+              Spring, Hibernate, Ember.js, Vue.js
+          </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+              Databases
+            </td>
+            <td colspan="3">
+                MySQL, PostgreSQL, DynamoDb, Redis
+            </td>
+          </tr>
+        <tr>
+          <td colspan="2">B.Tech in Computer Science and Engineering</td>
+          <td>IIT (ISM) Dhanbad</td>
+          <td>2015</td>
+          <td>8.1</td>
+        </tr>
+      </table>
+
+      <table class="experience-table">
+        <tr>
+          <th><strong>Adobe</strong><br>Computer Scientist, Dec 2015 - Present</th>
+          <th>Bengaluru</th>
+        </tr>
+        <tr class="experience-keywords text-left">
+          <td colspan="2">
+            <strong>Product:</strong> Captivate Prime<br>
+            Captivate Prime is a Learning Management System (LMS) designed to train employees, partners and customers effectively; primarily for corporates and enterprises. 
+          </td>
+        </tr>
+        <tr class="experience-keywords text-left">
+          <td colspan="2">
+            <strong>Feature:</strong> Reporting<br>
+            <strong>Technology:</strong> Java, PostgreSQL, MySQL, jooQ, Ember.js, Typescript
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <ul>
+              <li>Implemented a dashboard where users could see aggregation of the learning activities and course enrollment/completion trends of their subordinates. </li>
+              <li>Wrote APIs to send out aggregated reporting data stored in PostgreSQL to the client. Queries were written in Java using jooQ.</li>
+              <li>Made use of materialized views to provide minimal API response time since PostgreSQL had lakhs of statements and reading from PostgreSQL and aggregating at run-time was a challenge. This included optimization of base materialized view queries as per the production usage trends.</li>
+              <li>Implemented an averaging algorithm to recommend courses to these users based on the ongoing trends (enrollments and completions) within their teams.</li>
+              <li>Support for lazy loading of data.</li>
+              <li>Client side was implemented using Chart.js and c3.js libraries, using the Ember.js framework with Typescript.</li>
+              <li>Support for client-side pagination and handling of large data scenarios.</li>
+              <li>Implemented generating learner transcripts in a downloadable format (.xls or .csv) by aggregation of PostgreSQL data, based on client passed filter params.</li>
+              <li>Optimized previously written other reporting APIs, mainly by creating indexes (on multiple column combinations) as well as making use of temp tables.</li>
+            </ul>  
+          </td>
+        </tr>
+
+        <tr class="experience-keywords text-left">
+          <td colspan="2">
+            <strong>Feature:</strong> Notification and Email Workers<br>
+            <strong>Technology:</strong> Java, DynamoDB, SQS, Ember.js, Typescript
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <ul>
+              <li>Worked on the implementation of an SQS worker for notifications for the product. Its job is to send out push notifications within the App.</li>
+              <li>Made use of AWS SQS for the same.</li>
+              <li>Further optimizations were done to minimize the number of notifications sent per event and to consolidate the mark read operations as well.</li>
+              <li>Implemented the Email Worker to send out notifications in form of Emails to the users. Dealt with multiple time zone issues there.</li>
+              <li>Wrote a worker task for the Integration with third-party SendGrid APIs and Java SMTP libraries for sending out emails. </li>
+            </ul> 
+          </td>
+        </tr>
+
+        <tr class="experience-keywords text-left">
+          <td colspan="2">
+            <strong>Feature:</strong> Content Vendor Integration<br>
+            <strong>Technology:</strong> Java, Ember.js, Typescript
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <ul>
+             <li>
+                Worked on integrating vendor content with Captivate Prime.
+             </li>
+            <li>This involved creating licensing keys as per the chosen dates and selected content from the vendor and making them available to Prime users.</li>
+           <li>The whole workflow as designed in such a way that it could be used in future for other vendors as well; with almost zero code changes.</li>       
+            </ul> 
+          </td>
+        </tr>
+      </table>
+
+       <div class="pagebreak"></div>
+
+       <table>
+        <tr class="experience-keywords text-left">
+          <td colspan="2">
+            <strong>Feature:</strong> Embedded Calendar Invites<br>
+            <strong>Technology:</strong> iCal, Java, Java SMTP, SendGrid, Moment.js
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <ul>
+              <li>Implemented sending out customized calendar invites using iCal libraries and SendGrid v3 APIs to email clients like Outlook and Gmail. </li>
+              <li>This includes blocking as well as unblocking the users’ calendars. Dealt with multiple time zones.</li>
+              <li>It has proven to be the most efficient feature for the product.</li>
+            </ul>
+          </td>
+        </tr>
+
+      <tr class="experience-keywords text-left">
+          <td colspan="2">
+            <strong>Feature:</strong> HTML5 Embeddable Content player<br>
+            <strong>Technology:</strong>  Vue.js, Typescript, Java, MySQL, Brightcove
+          </td>
+        </tr>
+        <tr class="experience-keywords text-left">
+          <td colspan="2">
+            <ul>
+              <li>Implemented an embeddable fluidic player for users to consume content from.</li>
+              <li>This included sending out and capturing player statements, collecting grades and storing them efficiently in the databases. All this was done using restful APIs.</li>
+              <li>Worked on integrating Brightcove APIS, an Online Video Platform, into the content player.</li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr class="experience-keywords text-left">
+          <td colspan="2">
+            <strong>Feature:</strong> Graphical Reports<br>
+            <strong>Technology:</strong> c3.js, d3.js, Typescript, Ember.js, Chart.js
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <ul>
+              <li>Implemented graphical representation of user scoring data using c3 and d3 libraries written using Ember.js framework.</li>
+            </ul>
+          </td>
+        </tr>
+
+        <tr class="experience-keywords text-left">
+          <td colspan="2">
+            <strong>Others</strong><br>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <ul>
+              <li>Worked for a brief period of time (about 4 months) in the customer support team. Dealt with customers like Publicis (200k user accounts), Mitsubishi, Dominos (100k user accounts) directly and resolved multiple issues regarding bulk CSV uploads, content uploads and generation of learner transcripts. The process involved high level of urgency as issues like these demand quick debugging and root cause analysis. Database changes were required to be made on Production servers directly.</li>
+              <li>Upgraded Ember.js version and optimized API calls for the whole Learner App of the product.</li>
+              <li>Part of migration team that runs various DB migration activities during the production release process along with other pre-deployment tasks like creating new tables, data migration, running materialized view queries etc.</li>
+              <li>Strong advocate of timely optimizations in the existing features in favor of product scalability. As a part of the same, I have worked on multiple optimization milestones and resolved issues like DynamoDB throughput limit exceeded exceptions, minimizing API response time at several pages like notifications, query while reporting, learner App experience improvement etc.</li>
+              <li>Part of clean code initiative to spread awareness among other peers regarding the code review process.</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+
+      <table class="experience-table">
+        <tr>
+          <th><strong>Publicis Sapient</strong><br>Software Developer, Aug 2015 - Dec 2015</th>
+          <th>Bengaluru</th>
+        </tr>
+        <tr class="experience-keywords text-left">
+          <td colspan="2">
+            <ul>
+              <li>Worked as a Java Trainee for 3 months. Training was provided by highly qualified professionals in Java.</li>
+              <li>Topics focused were Java8, Spring, Hibernate.</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
