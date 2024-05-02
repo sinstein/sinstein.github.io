@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="stylesheets/cv.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -36,17 +40,10 @@
           <td colspan="5">
             <p>
               Hi, I am Saurav Kothari, a full stack engineer with 9 years of experience building full stack systems as both an IC and a Lead.
-              I consider myself to be an engineer first, developer second;
-              i.e, my goal is to solve problems and technology is one of the tools I utilize to solve them.
             </p>
             <p>
-              Over the past years I have had the opportunity to work across a wide range of business domains from Travel, SaaS to e-commerce.
-              I have worked across the stack over components that have been internal facing as well as user facing and I believe I can empathize with
-              the end consumer of my product.
-            </p>
-            <p>
-              I have been fortunate to have worked with various languages and frameworks and feel comfortable learning new ones
-              as needed and switching between them on the go.
+              Over the years, I've gained experience across various business sectors, including Travel, SaaS, and e-commerce.
+              My work has spanned across the stack over components that have been internal tools as well as user facing giving me a deep understanding of the end-user's needs. I've successfully collaborated with teams like Operations, Policy, and Legal, translating their needs into detailed, actionable solutions delivered on time.
             </p>
           </td>
         </tr>
@@ -73,39 +70,56 @@
           <td>2015</td>
           <td>7.5</td>
         </tr>
-        <tr>
+        <!-- <tr>
           <td class="secondary-cell">
               <span class="secondary secondary-note">* elementary proficiency</span>
           </td>
-        </tr>
+        </tr> -->
       </table>
 
 
       <table class="experience-table">
         <tr>
           <th><strong>Airbnb</strong><br>Software Engineer, Nov 2021 - Present</th>
-          <th>Bengaluru</th>
+          <th>Remote</th>
         </tr>
         <tr class="experience-keywords text-left">
           <td colspan="2">
-            <strong>Domain:</strong> Regulations & Automation
+            <strong>Domain:</strong> Cities: Regulations & Automation
           </td>
         </tr>
         <tr class="experience-keywords text-left">
           <td colspan="2">
-            <strong>Technology:</strong> Java, Kotlin, TypeScript, ReactJS, 
+            <strong>Technology:</strong> Java, Kotlin, Ruby, TypeScript
           </td>
         </tr>
         <tr>
           <td colspan="2">
+            <div class="experience-summary">
+              <p>The Cities team at Airbnb is an engineering team that builds systems to ensure Airbnb's compliance with government regulations. They aim to provide a seamless experience for guests, hosts, internal operations, and government regulators. The team also owns the City Portal, a product dedicated to serving the needs of government and building long-term partnerships with key Airbnb stakeholders.</p>
+              <p>The Regulations & Automation team, which is a part of the larger Cities team, focuses on ensuring that Airbnb's services are launched in new geographical locations while adhering to local regulations. This process is made more efficient through automation. The team plays a crucial role in enabling launches at scale, providing tools to the Policy and Operational teams to do self-serve launches for a large number of jurisdictions.</p>
+            </div>
             <ol>
               <li>Automation</li>
               <ul>
-                  <li>Led the transition of automation to the India team by conducting knowledge sharing sessions and code deep dives</li>
-                  <li>Onboarded 10 engineers to automation tech stack, fortifying regulatory launches in Cities India team</li>
-                  <li>The reworked data flow reduced backend engineering work for introducing a new bundle by ~80%</li>
-                  <li>Co-designed the editability workstream so that it could leverage the new framework without being blocked for migration</li>
-                  <li>Aided Ops and Policy in planning and launching 30+ escalated and non-standard geos and onboarded team members to various internal city tools</li>
+                  <li>Simplified the Automation backend at Airbnb to reduce the time to launch new bundles. This was done to address the slow and costly process of automating bundles due to high engineering costs. As a result, the backend effort for adding a new launch type was reduced by 80%.</li>
+                  <li>Simplification was achieved by decoupling user inputs from backend operations by leveraging an abstract factory module for bundle-specific implementation. This module translates user inputs into task inputs, streamlining the process of launching new bundles.</li>
+                  <li>Redesigned the review process for automated launch proposals to accommodate multiple reviewers, mandatory roles and persisted comments, managing automation bundles requiring up to 9 reviews</li>
+                  <li>Partnered with the US team to expand automation capabilities to support more launch types</li>
+                  <li>Co-designed support for editability to allow Ops teams to self-serve updates to regulations</li>
+                  <li>Co-designed pre-launch analysis to compute the result of launches offline to enable safer updates</li>
+                  <!--  -->
+                  <li>Established and led a weekly automation standup to ensure project timeliness, updates, and resolution of engineers' obstacles.</li>
+                  <li>Onboarded 10 engineers to the automation tech stack, fortifying regulatory launches in the Cities India team.</li>
+                  <li>Assisted in the integration of a new team members into the automation group, aiding in Netherlands and France subregion launches</li>
+                  <li>Served as Primary POC for all automation support post transition to the Cities India team</li>
+                  <li>Led the design and implementation of the roadmap for 2023 and 2024</li>
+              </ul>
+              <li>Launch & Operations</li>
+              <ul>
+                <li>Translated legal and regulatory requirements into manageable product solutions autonomously. This aided Ops and Policy in their planning and launching processes.</li>
+                <li>Led bi-weekly meetings with Cities Ops and Policy for prioritization, demos, and feature talks. This ensured the successful facilitation of over 25+ custom launches</li>
+                <li>Provide consultation for complex regulatory launches including expanding system capabilities and guardrails for safer launches</li>
               </ul>
             </ol>
           </td>
@@ -115,7 +129,7 @@
       <table class="experience-table">
         <tr>
           <th><strong>AirAsia</strong><br>Tech Lead (Full Stack), Dec 2020 - Oct 2020</th>
-          <th>Bengaluru</th>
+          <th>Remote</th>
         </tr>
         <tr class="experience-keywords text-left">
           <td colspan="2">
@@ -196,8 +210,6 @@
         </tr>
       </table>
 
-      <div class="pagebreak"></div>
-
       <table class="experience-table">
         <tr>
           <th><strong>honestbee</strong><br>Software Engineer 2, July 2018 - May 2019</th>
@@ -226,6 +238,8 @@
         </tr>
       </table>
 
+      <!-- <div class="pagebreak"></div> -->
+
       <table class="experience-table">
         <tr>
           <th><strong>BrowserStack Inc.</strong><br>Software Developer, May 2015 - July 2018</th>
@@ -247,28 +261,27 @@
               <li>
                 Automate Team
                 <ul>
-                  <li>Implemented a tier based segregation for the various device types offered by BrowserStack to allow custom limits on how many can be used at the same time per device per customer. This allowed us to increase the availability of our devices with minimal impact to genuine usage.</li>
-                  <li>Designed and developed a diagnosis utility to notify users of errors in their tests based on data from multiple sources which helped reduce the load on the Tech Support team</li>
-                  <li>Designed and developed a rule engine to validate and map user sent capabilities with both a back-end validator and <a href="https://www.browserstack.com/automate/capabilities">front-end</a> for users to explore the full breadth of customizations for their test suites</li>
-                  <li>Designed and developed a Redis based caching solution ahead of our primary rails server to prevent spamming from faulty user scripts</li>
-                  <li>Used Redis to provide HA of multiple services and async processing which allows us to provide better reliability to our users</li>
-                  <li>Developed custom client code on Windows/Android/iOS platforms to provide browser console logs, network logs and other native browser features that allow users to debug their tests with ease</li>
-                  <li>Designed and developed a daily summary service for users that would send them a daily digest of their tests on BrowserStack based on their time zone which increased visits to our dashboard by 20% and allowed customers to get notified of potential problems faster</li>
-                  <li>Was responsible for optimizing and upgrading our REST API to allow users to modify and batch delete their tests with ease</li>
-                  <li>Was responsible for maintaining real-time dashboard of customer tests with options to search and filter</li>
-                  <li>Was responsible for maintaining a cross-region uploader service that collects and uploads session logs that can be scattered across multiple machines in multiple regions to S3</li>
+                  <li>Implemented tier-based segregation for device types, enabling custom limits on simultaneous usage per device per customer, increasing device availability with minimal impact on genuine usage</li>
+                  <li>Designed and developed a diagnosis utility to notify users of test errors, reducing the load on the Tech Support team</li>
+                  <li>Created a rule engine to validate and map user-sent capabilities, providing extensive customization options for test suites</li>
+                  <li>Developed a Redis-based caching solution to prevent spamming from faulty user scripts and provide high availability for multiple services and async processing</li>
+                  <li>Developed custom client code on Windows/Android/iOS platforms to facilitate browser console logs, network logs, and native browser features for easy test debugging</li>
+                  <li>Designed and developed a daily summary service, sending users a digest of their tests based on their time zone, increasing dashboard visits by 20% and enabling faster problem notification</li>
+                  <li>Optimized and upgraded the REST API for easy modification and batch deletion of tests</li>
+                  <li>Maintained a real-time dashboard of customer tests with search and filter options</li>
+                  <li>Maintained a cross-region uploader service to collect and upload session logs scattered across multiple machines in multiple regions to S3</li>
                 </ul>
               </li>
               <li>
                 Rails Team
                 <ul>
-                  <li>Wrote various admin endpoints to manage user subscriptions for the Sales team to allow them to become more self-sufficient and reduce strain on engineering resources</li>
-                  <li>Wrote an internal newsletter tool for the Marketing team to send targeted newsletters with time zone support to users</li>
-                  <li>Maintained payment and order processing across various iterations of pricing plans</li>
-                  <li>A/B Testing using external and in-house frameworks</li>
-                  <li>Was responsible for the redesign of the browserstack.com website from scratch with the focus on page performance and responsiveness</li>
-                  <li>Was responsible for the reskin and redesign of Product Dashboard(s)</li>
-                  <li>Analytics and tracking using internal and external data tracking services</li>
+                  <li>Developed admin endpoints to empower the Sales team in managing user subscriptions independently, reducing reliance on engineering resources</li>
+                  <li>Created an internal newsletter tool for the Marketing team, enabling them to send targeted newsletters with time zone support to users</li>
+                  <li>Ensured smooth payment and order processing across multiple pricing plan iterations</li>
+                  <li>Conducted A/B testing using both external and in-house frameworks</li>
+                  <li>Led the complete redesign of the browserstack.com website, prioritizing page performance and responsiveness</li>
+                  <li>Oversaw the reskin and redesign of Product Dashboard(s)</li>
+                  <li>Implemented analytics and tracking utilizing internal and external data tracking services</li>
                 </ul>
               </li>
             </ol>

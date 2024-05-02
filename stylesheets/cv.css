@@ -2,10 +2,11 @@ table {
 	width: 100%;
 	max-width: 1000px;
 	margin: 0 auto;
-	padding-bottom: 20px;
+	padding-bottom: 5px;
 	table-layout: fixed;
 	margin-bottom: 10px;
-	font-family: 'Calibri', 'Open Sans', sans-serif;
+	font-family: 'Lora', 'Montserrat', 'Calibri', 'Open Sans', sans-serif;
+	font-size: 15px;
 	text-align: center;
 }
 
@@ -28,7 +29,7 @@ ul {
 }
 
 .experience-summary {
-	padding: 0 20px;
+	padding: 0 10px;
 }
 
 .experience-keywords td {
@@ -64,7 +65,7 @@ table {
 }
 
 .experience-table ul li {
-	padding: 5px;
+	padding: 0;
 }
 
 th strong {
@@ -76,7 +77,7 @@ th strong {
 }
 
 .summary-table {
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 
 .pagebreak {
