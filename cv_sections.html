@@ -25,7 +25,7 @@
         <a href="/public/CV_Saurav_Kothari.pdf" target="_blank">Download PDF version</a>
       </div>
       <table class="intro-table">
-        <tr>
+        <tr class="bg-gray">
           <th colspan="3">Saurav Kothari</th>
         </tr>
         <tr>
@@ -74,9 +74,9 @@
 
 
       <table class="experience-table">
-        <tr>
+        <tr class="bg-gray">
           <th><strong>Airbnb</strong><br>Software Engineer, Nov 2021 - Present</th>
-          <th>Remote</th>
+          <th>Remote (India)</th>
         </tr>
         <tr class="experience-keywords text-left">
           <td colspan="2">
@@ -94,17 +94,17 @@
               <p>The Cities team at Airbnb is an engineering team that builds systems to ensure Airbnb's compliance with government regulations. The team owns the host-flow for regulations, City Portal and a slew of other internal tools to monitor and enforce on regulated geographies.</p>
               <p>The Regulations & Automation team, which is a part of the larger Cities team, focuses on ensuring that Airbnb's services are launched in new geographical locations while adhering to local regulations. This process is made more efficient through automation which allows Policy and Operations teams to self-serve a large number of launches.</p>
             </div>
-            <ol>
-              <li>Automation</li>
+            <ul>
+              <li class="team-name"><b>Automation</b></li>
               <p>The automation tool is written in <b>Typescript + React</b> and uses a federated <b>GraphQL</b> service to communicate with the <b>Java</b> backend service. Services are deployed via Kubernetes and use managed Amazon Aurora for storage. It was used to launch regulations in 40+ geographies affecting 100K+ listings in Q1'24</p>
               <ul>
                   <li><b>System Design & Optimization</b></li>
                     <ul>
+                      <li>Simplified the Automation backend at Airbnb to reduce the time to launch new bundles by <b>80%</b>. This was done to address the slow process of automating bundles due to high engineering costs.</li>
+                      <li>Decoupled user inputs from backend operations by leveraging an abstract factory module for bundle-specific implementation. This module translates user inputs into task inputs, streamlining the process of launching new bundles.</li>
                       <li>Build and maintain the workflow system which is responsible for taking reviewed user inputs and performing a predefined set of tasks in order. Each task is designed to be reuseable, independent and idempotent. The task list is maintained as directed graph for each launch type which is resolved to its linear order using a topological sort at runtime</li>
                       <li>Build and maintain support for additional task graphs to be mapped to a launch type to be run at different lifecycle stages of the proposal (eg: post-activation task graph for ops to monitor progress after activation reducing engineering involvement to validate launches)</li>
                       <li>Build and maintain the review system required for launching a proposal. Added support for user roles, mandatory reviews by specific roles and an optional ability to self-review for smaller launches. For every section in the proposal, a list of mandatory roles is maintained in code. A review expection is created in the database when the proposal changes states and each row must have an accepted review for the proposal to be moved to activation.</li>
-                      <li>Simplified the Automation backend at Airbnb to reduce the time to launch new bundles. This was done to address the slow process of automating bundles due to high engineering costs. As a result, the backend effort for adding a new launch type was reduced by 80%.</li>
-                      <li>Decoupled user inputs from backend operations by leveraging an abstract factory module for bundle-specific implementation. This module translates user inputs into task inputs, streamlining the process of launching new bundles.</li>
                     </ul>
                   <li><b>Independence & Ownership</b></li>
                     <ul>
@@ -120,21 +120,21 @@
                     </ul>
                   <!--  -->
               </ul>
-              <li>Launch & Operations</li>
+              <li class="team-name"><b>Launch & Operations</b></li>
               <ul>
                 <li>Translated legal and regulatory requirements into manageable product solutions autonomously. This aided Ops and Policy in their planning and launching processes.</li>
                 <li>Led bi-weekly meetings with Cities Ops and Policy for prioritization, demos, and feature talks. This ensured the successful facilitation of over 25+ custom launches</li>
                 <li>Provide consultation for complex regulatory launches (eg: <a href="https://www.nyc.gov/site/specialenforcement/registration-law/registration.page">NYC</a>, <a href="https://nola.gov/next/short-term-rental-administration/announcements/short-term-rental-update/">New Orleans</a>) including expanding system capabilities and guardrails for safer launches</li>
               </ul>
-            </ol>
+            </ul>
           </td>
         </tr>
       </table>
 
       <table class="experience-table">
-        <tr>
+        <tr class="bg-gray">
           <th><strong>AirAsia</strong><br>Tech Lead (Full Stack), Dec 2020 - Oct 2020</th>
-          <th>Remote</th>
+          <th>Remote (India)</th>
         </tr>
         <tr class="experience-keywords text-left">
           <td colspan="2">
@@ -148,19 +148,19 @@
         </tr>
         <tr>
           <td colspan="2">
-            <ol>
-              <li>Experimentation</li>
+            <ul>
+              <li class="team-name"><b>Experimentation</b></li>
               <ul>
                   <li>Designed and developed multi variate experiment support in the in-house experimentation product.</li>
                   <li>Designed and developed a unified session solution to track user journey for accurate analysis of experiment effect on user behaviour.</li>
               </ul>
-            </ol>
+            </ul>
           </td>
         </tr>
       </table>
 
       <table class="experience-table">
-        <tr>
+        <tr class="bg-gray">
           <th><strong>Udaan</strong><br>Product Engineer, May 2019 - Aug 2020</th>
           <th>Bengaluru</th>
         </tr>
@@ -182,8 +182,8 @@
                 build a roadmap for execution and achieving business goals via tech and non-tech solutions.
               </p>
             </div>
-            <ol>
-              <li>First Party Procurement</li>
+            <ul>
+              <li class="team-name"><b>First Party Procurement</b></li>
                 <p>
                   We were building a product that would systemize the procurement process of goods at Udaan.
                   We were purchasing and selling a lot of inventory but all the accounting was done outside the system.
@@ -210,13 +210,13 @@
                 <li>All deviations from the PO are recorded, staged in warehouse and require additional approval to be inwarded</li>
                 <li>Every inward cycle to trigger the relevant <strong>financial workflows</strong> including vendor payments, adjustment notes, return notes etc</li>
               </ul>
-            </ol>
+            </ul>
           </td>
         </tr>
       </table>
 
       <table class="experience-table">
-        <tr>
+        <tr class="bg-gray">
           <th><strong>honestbee</strong><br>Software Engineer 2, July 2018 - May 2019</th>
           <th>Bengaluru</th>
         </tr>
@@ -232,13 +232,13 @@
         </tr>
         <tr>
           <td colspan="2">
-            <ol>
-              <li>Hive & Logistics</li>
+            <ul>
+              <li class="team-name"><b>Hive & Logistics</b></li>
               <ul>
                   <li>Designed and developed a new architecture based on Domain Driven Design (DDD) for saving and presenting products data to users as part of migrating from a store based experience to a storeless experience. This included building a microservice that would communicate with multiple other services to process and present requested data to consumers.</li>
                   <li>Designed and developed a Dynamic Salary System for honestbee deliverers (referred to as Delivery bees). The system takes into account various parameters for payout with support for peak periods and backdated changes.</li>
               </ul>
-            </ol>
+            </ul>
           </td>
         </tr>
       </table>
@@ -246,7 +246,7 @@
       <!-- <div class="pagebreak"></div> -->
 
       <table class="experience-table">
-        <tr>
+        <tr class="bg-gray">
           <th><strong>BrowserStack Inc.</strong><br>Software Developer, May 2015 - July 2018</th>
           <th>Mumbai</th>
         </tr>
@@ -262,9 +262,8 @@
         </tr>
         <tr>
           <td colspan="2">
-            <ol>
-              <li>
-                Automate Team
+            <ul>
+              <li class="team-name"><b>Automate Team</b></li>
                 <ul>
                   <li>Implemented tier-based segregation for device types, enabling custom limits on simultaneous usage per device per customer, increasing device availability with minimal impact on genuine usage</li>
                   <li>Designed and developed a diagnosis utility to notify users of test errors, reducing the load on the Tech Support team</li>
@@ -276,9 +275,7 @@
                   <li>Maintained a real-time dashboard of customer tests with search and filter options</li>
                   <li>Maintained a cross-region uploader service to collect and upload session logs scattered across multiple machines in multiple regions to S3</li>
                 </ul>
-              </li>
-              <li>
-                Rails Team
+              <li class="team-name"><b>Rails Team</b></li>
                 <ul>
                   <li>Developed admin endpoints to empower the Sales team in managing user subscriptions independently, reducing reliance on engineering resources</li>
                   <li>Created an internal newsletter tool for the Marketing team, enabling them to send targeted newsletters with time zone support to users</li>
@@ -288,25 +285,24 @@
                   <li>Oversaw the reskin and redesign of Product Dashboard(s)</li>
                   <li>Implemented analytics and tracking utilizing internal and external data tracking services</li>
                 </ul>
-              </li>
-            </ol>
+            </ul>
           </td>
         </tr>
       </table>
 
       <table class="experience-table">
-          <tr>
+          <tr class="bg-gray">
             <th><strong>Amazon India Pvt. Ltd.</strong><br>Software Developer Intern, Summer 2014</th>
             <th>Bengaluru</th>
           </tr>
           <tr>
             <td colspan="2">
-              <ol>
-                <li>FC Systems</li>
+              <ul>
+                <li class="team-name"><b>FC Systems</b></li>
                 <ul>
                   <li>Automated the launch of new FC (Fulfillment Centre) for various services and tools pertaining to my team (Shipment Data Platform). Manual launching of new FC's was time consuming and prone to errors. Automation reduces human intervention and optimizes time.</li>
                 </ul>
-              </ol>
+              </ul>
             </td>
           </tr>
         </table>
