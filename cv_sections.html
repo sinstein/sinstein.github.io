@@ -96,20 +96,29 @@
             </div>
             <ol>
               <li>Automation</li>
-              <p>The automation tool is written in <b>Typescript + React</b> and uses a federated <b>GraphQL</b> service to communicate with the <b>Java</b> backend service. The service is deployed via Kubernetes and uses managed Amazon Aurora for storage. It was used to launch regulations in 40+ geographies affecting 100K+ listings in Q1'24</p>
+              <p>The automation tool is written in <b>Typescript + React</b> and uses a federated <b>GraphQL</b> service to communicate with the <b>Java</b> backend service. Services are deployed via Kubernetes and use managed Amazon Aurora for storage. It was used to launch regulations in 40+ geographies affecting 100K+ listings in Q1'24</p>
               <ul>
-                  <li>Build and maintain the workflow system which is responsible for taking reviewed user inputs and performing a predefined set of tasks in order. Each task is designed to be reuseable, independent and idempotent. The task list is maintained as directed graph for each launch type which is resolved to its linear order using a topological sort at runtime</li>
-                  <li>Build and maintain support for additional task graphs to be mapped to a launch type to be run at different lifecycle stages of the proposal (eg: post-activation task graph for ops to monitor progress after activation reducing engineering involvement to validate launches)</li>
-                  <li>Build and maintain the review system required for launching a proposal. Added support for user roles, mandatory reviews by specific roles and an optional ability to self-review for smaller launches. For every section in the proposal, a list of mandatory roles is maintained in code. A review expection is created in the database when the proposal changes states and each row must have an accepted review for the proposal to be moved to activation.</li>
-                  <li>Continuously analyse past and predicted intakes to expand the scope of launches available via automation. Led the design and delivery of the roadmap for 2023 and 2024</li>
-                  <li>Simplified the Automation backend at Airbnb to reduce the time to launch new bundles. This was done to address the slow process of automating bundles due to high engineering costs. As a result, the backend effort for adding a new launch type was reduced by 80%.</li>
-                  <li>Decoupled user inputs from backend operations by leveraging an abstract factory module for bundle-specific implementation. This module translates user inputs into task inputs, streamlining the process of launching new bundles.</li>
-                  <li>Co-designed support for editability to allow Operations teams to self-serve updates to regulations</li>
-                  <li>Co-designed pre-launch analysis to compute the result of launches offline to enable safer updates. The system triggers an airflow job that computes the result of a launch before its activated to allow data driven decision making on the safety and correctness of a proposal</li>
+                  <li><b>System Design & Optimization</b></li>
+                    <ul>
+                      <li>Build and maintain the workflow system which is responsible for taking reviewed user inputs and performing a predefined set of tasks in order. Each task is designed to be reuseable, independent and idempotent. The task list is maintained as directed graph for each launch type which is resolved to its linear order using a topological sort at runtime</li>
+                      <li>Build and maintain support for additional task graphs to be mapped to a launch type to be run at different lifecycle stages of the proposal (eg: post-activation task graph for ops to monitor progress after activation reducing engineering involvement to validate launches)</li>
+                      <li>Build and maintain the review system required for launching a proposal. Added support for user roles, mandatory reviews by specific roles and an optional ability to self-review for smaller launches. For every section in the proposal, a list of mandatory roles is maintained in code. A review expection is created in the database when the proposal changes states and each row must have an accepted review for the proposal to be moved to activation.</li>
+                      <li>Simplified the Automation backend at Airbnb to reduce the time to launch new bundles. This was done to address the slow process of automating bundles due to high engineering costs. As a result, the backend effort for adding a new launch type was reduced by 80%.</li>
+                      <li>Decoupled user inputs from backend operations by leveraging an abstract factory module for bundle-specific implementation. This module translates user inputs into task inputs, streamlining the process of launching new bundles.</li>
+                    </ul>
+                  <li><b>Independence & Ownership</b></li>
+                    <ul>
+                      <li>Served as Primary POC for all automation support post transition to the Cities India team indirectly helping 100+ launches</li>
+                      <li>Continuously analyse past and predicted intakes to expand the scope of launches available via automation. Led the design and delivery of the roadmap for 2023 and 2024</li>
+                    </ul>
+                  <li><b>Mentorship & Team Growth</b></li>
+                    <ul>
+                      <li>Onboarded 10 engineers to the automation tech stack, fortifying regulatory launches in the Cities India team. Established and led a weekly automation standup to ensure project timeliness, updates, and resolution of engineers' obstacles.</li>
+                      <li>Assisted in the integration of a new team members into the automation group, aiding in Netherlands and France subregion launches</li>
+                      <li>Co-designed support for editability to allow Operations teams to self-serve updates to regulations</li>
+                      <li>Co-designed pre-launch analysis to compute the result of launches offline to enable safer updates. The system triggers an airflow job that computes the result of a launch before its activated to allow data driven decision making on the safety and correctness of a proposal</li>
+                    </ul>
                   <!--  -->
-                  <li>Served as Primary POC for all automation support post transition to the Cities India team indirectly helping 100+ launches</li>
-                  <li>Onboarded 10 engineers to the automation tech stack, fortifying regulatory launches in the Cities India team. Established and led a weekly automation standup to ensure project timeliness, updates, and resolution of engineers' obstacles.</li>
-                  <li>Assisted in the integration of a new team members into the automation group, aiding in Netherlands and France subregion launches</li>
               </ul>
               <li>Launch & Operations</li>
               <ul>
